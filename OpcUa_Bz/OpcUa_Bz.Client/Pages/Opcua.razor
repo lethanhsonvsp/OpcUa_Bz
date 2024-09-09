@@ -1,0 +1,36 @@
+﻿@page "/opcua"
+@inject OpcUaServerService OpcUaServer
+
+@rendermode InteractiveServer
+
+<h3>AMR Robot Monitor</h3>
+<h3>OPC UA Server Control</h3>
+<p>Server status: @(OpcUaServer.IsRunning ? "Running" : "Stopped")</p>
+<button @onclick="StartServer" disabled="@OpcUaServer.IsRunning">Start Server</button>
+<button @onclick="StopServer" disabled="@(!OpcUaServer.IsRunning)">Stop Server</button>
+
+@code {
+    private async Task StartServer()
+    {
+        try
+        {
+            await OpcUaServer.StartServer();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine($"Error starting server: {e.Message}");
+        }
+    }
+
+    private void StopServer()
+    {
+        try
+        {
+            OpcUaServer.StopServer();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine($"Error stopping server: {e.Message}");
+        }
+    }
+}

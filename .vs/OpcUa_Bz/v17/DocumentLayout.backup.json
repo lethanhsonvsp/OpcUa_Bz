@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\letha\\OneDrive\\BL\\OpcUa_Bz\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6FCE6A70-DBA7-46A3-BFBA-42510E472A09}|OpcUa_Bz\\OpcUa_Bz.Client\\OpcUa_Bz.Client.csproj|c:\\users\\letha\\onedrive\\bl\\opcua_bz\\opcua_bz\\opcua_bz.client\\opcuamanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FCE6A70-DBA7-46A3-BFBA-42510E472A09}|OpcUa_Bz\\OpcUa_Bz.Client\\OpcUa_Bz.Client.csproj|solutionrelative:opcua_bz\\opcua_bz.client\\opcuamanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FCE6A70-DBA7-46A3-BFBA-42510E472A09}|OpcUa_Bz\\OpcUa_Bz.Client\\OpcUa_Bz.Client.csproj|c:\\users\\letha\\onedrive\\bl\\opcua_bz\\opcua_bz\\opcua_bz.client\\opcuaserverservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FCE6A70-DBA7-46A3-BFBA-42510E472A09}|OpcUa_Bz\\OpcUa_Bz.Client\\OpcUa_Bz.Client.csproj|solutionrelative:opcua_bz\\opcua_bz.client\\opcuaserverservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 228,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OpcuaManagement.cs",
+              "DocumentMoniker": "C:\\Users\\letha\\OneDrive\\BL\\OpcUa_Bz\\OpcUa_Bz\\OpcUa_Bz.Client\\OpcuaManagement.cs",
+              "RelativeDocumentMoniker": "OpcUa_Bz\\OpcUa_Bz.Client\\OpcuaManagement.cs",
+              "ToolTip": "C:\\Users\\letha\\OneDrive\\BL\\OpcUa_Bz\\OpcUa_Bz\\OpcUa_Bz.Client\\OpcuaManagement.cs",
+              "RelativeToolTip": "OpcUa_Bz\\OpcUa_Bz.Client\\OpcuaManagement.cs",
+              "ViewState": "AgIAACADAAAAAAAAAAAAADADAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T07:58:41.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OpcUaServerService.cs",
+              "DocumentMoniker": "C:\\Users\\letha\\OneDrive\\BL\\OpcUa_Bz\\OpcUa_Bz\\OpcUa_Bz.Client\\OpcUaServerService.cs",
+              "RelativeDocumentMoniker": "OpcUa_Bz\\OpcUa_Bz.Client\\OpcUaServerService.cs",
+              "ToolTip": "C:\\Users\\letha\\OneDrive\\BL\\OpcUa_Bz\\OpcUa_Bz\\OpcUa_Bz.Client\\OpcUaServerService.cs",
+              "RelativeToolTip": "OpcUa_Bz\\OpcUa_Bz.Client\\OpcUaServerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T07:28:26.545Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

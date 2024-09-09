@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\letha\\OneDrive\\OpcUa_Bz\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6FCE6A70-DBA7-46A3-BFBA-42510E472A09}|OpcUa_Bz\\OpcUa_Bz.Client\\OpcUa_Bz.Client.csproj|c:\\users\\letha\\onedrive\\opcua_bz\\opcua_bz\\opcua_bz.client\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FCE6A70-DBA7-46A3-BFBA-42510E472A09}|OpcUa_Bz\\OpcUa_Bz.Client\\OpcUa_Bz.Client.csproj|solutionrelative:opcua_bz\\opcua_bz.client\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FCE6A70-DBA7-46A3-BFBA-42510E472A09}|OpcUa_Bz\\OpcUa_Bz.Client\\OpcUa_Bz.Client.csproj|c:\\users\\letha\\onedrive\\opcua_bz\\opcua_bz\\opcua_bz.client\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FCE6A70-DBA7-46A3-BFBA-42510E472A09}|OpcUa_Bz\\OpcUa_Bz.Client\\OpcUa_Bz.Client.csproj|solutionrelative:opcua_bz\\opcua_bz.client\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "C:\\Users\\letha\\OneDrive\\OpcUa_Bz\\OpcUa_Bz\\OpcUa_Bz.Client\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "OpcUa_Bz\\OpcUa_Bz.Client\\Pages\\Counter.razor",
+              "ToolTip": "C:\\Users\\letha\\OneDrive\\OpcUa_Bz\\OpcUa_Bz\\OpcUa_Bz.Client\\Pages\\Counter.razor",
+              "RelativeToolTip": "OpcUa_Bz\\OpcUa_Bz.Client\\Pages\\Counter.razor",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T20:16:55.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "C:\\Users\\letha\\OneDrive\\OpcUa_Bz\\OpcUa_Bz\\OpcUa_Bz.Client\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "OpcUa_Bz\\OpcUa_Bz.Client\\Pages\\Weather.razor",
+              "ToolTip": "C:\\Users\\letha\\OneDrive\\OpcUa_Bz\\OpcUa_Bz\\OpcUa_Bz.Client\\Pages\\Weather.razor",
+              "RelativeToolTip": "OpcUa_Bz\\OpcUa_Bz.Client\\Pages\\Weather.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T20:13:53.946Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

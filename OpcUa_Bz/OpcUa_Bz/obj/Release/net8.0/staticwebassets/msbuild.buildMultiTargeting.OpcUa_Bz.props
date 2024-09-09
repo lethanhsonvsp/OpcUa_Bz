@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\OpcUa_Bz.props" />
+</Project>

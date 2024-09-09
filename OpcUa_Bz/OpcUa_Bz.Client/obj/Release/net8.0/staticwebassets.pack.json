@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\letha\\OneDrive\\BL\\OpcUa_Bz\\OpcUa_Bz\\OpcUa_Bz.Client\\bin\\Release\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\letha\\OneDrive\\BL\\OpcUa_Bz\\OpcUa_Bz\\OpcUa_Bz.Client\\obj\\Release\\net8.0\\compressed\\47i1zbq8hk.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\letha\\OneDrive\\BL\\OpcUa_Bz\\OpcUa_Bz\\OpcUa_Bz.Client\\wwwroot\\appsettings.Development.json",
+      "PackagePath": "staticwebassets\\appsettings.Development.json"
+    },
+    {
+      "Id": "C:\\Users\\letha\\OneDrive\\BL\\OpcUa_Bz\\OpcUa_Bz\\OpcUa_Bz.Client\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.OpcUa_Bz.Client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.OpcUa_Bz.Client.props",
+      "PackagePath": "build\\OpcUa_Bz.Client.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.OpcUa_Bz.Client.props",
+      "PackagePath": "buildMultiTargeting\\OpcUa_Bz.Client.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.OpcUa_Bz.Client.props",
+      "PackagePath": "buildTransitive\\OpcUa_Bz.Client.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

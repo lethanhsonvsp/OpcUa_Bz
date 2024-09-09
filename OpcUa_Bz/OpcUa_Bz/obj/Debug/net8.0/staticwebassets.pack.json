@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\letha\\OneDrive\\BL\\OpcUa_Bz\\OpcUa_Bz\\OpcUa_Bz\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\OpcUa_Bz.bundle.scp.css",
+      "PackagePath": "staticwebassets\\OpcUa_Bz.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\letha\\OneDrive\\BL\\OpcUa_Bz\\OpcUa_Bz\\OpcUa_Bz\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\letha\\OneDrive\\BL\\OpcUa_Bz\\OpcUa_Bz\\OpcUa_Bz\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\letha\\OneDrive\\BL\\OpcUa_Bz\\OpcUa_Bz\\OpcUa_Bz\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\letha\\OneDrive\\BL\\OpcUa_Bz\\OpcUa_Bz\\OpcUa_Bz\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.OpcUa_Bz.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.OpcUa_Bz.props",
+      "PackagePath": "build\\OpcUa_Bz.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.OpcUa_Bz.props",
+      "PackagePath": "buildMultiTargeting\\OpcUa_Bz.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.OpcUa_Bz.props",
+      "PackagePath": "buildTransitive\\OpcUa_Bz.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,109 @@
+﻿@page "/weather"
+@inject OpcUaServerService OpcUaServer
+@rendermode InteractiveServer
+
+<h3>OPC UA Server Control</h3>
+<p>Server status: @(OpcUaServer.IsRunning ? "Running" : "Stopped")</p>
+<button @onclick="StartServer" disabled="@OpcUaServer.IsRunning">Start Server</button>
+<button @onclick="StopServer" disabled="@(!OpcUaServer.IsRunning)">Stop Server</button>
+
+<h3>Variables</h3>
+<p>Robot Pose X: @robotPoseX</p>
+<p>Robot Pose Y: @robotPoseY</p>
+<p>Slam State: @slamState</p>
+<button @onclick="ReadVariables" disabled="@(!OpcUaServer.IsRunning)">Read Variables</button>
+
+<h3>Update Robot Position</h3>
+<p>
+    X: <input @bind="newRobotPoseX" type="number" step="0.1" />
+    Y: <input @bind="newRobotPoseY" type="number" step="0.1" />
+</p>
+<button @onclick="UpdateRobotPosition" disabled="@(!OpcUaServer.IsRunning)">Update Robot Position</button>
+
+<h3>Mapping Control</h3>
+<button @onclick="StartMapping" disabled="@(!OpcUaServer.IsRunning)">Start Mapping</button>
+<button @onclick="StopMapping" disabled="@(!OpcUaServer.IsRunning)">Stop Mapping</button>
+
+@code {
+    private double robotPoseX;
+    private double robotPoseY;
+    private string? slamState;
+    private double newRobotPoseX;
+    private double newRobotPoseY;
+
+    private async Task StartServer()
+    {
+        try
+        {
+            await OpcUaServer.StartServer();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error starting server: {ex.Message}");
+        }
+    }
+
+    private void StopServer()
+    {
+        try
+        {
+            OpcUaServer.StopServer();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error stopping server: {ex.Message}");
+        }
+    }
+
+    private async Task ReadVariables()
+    {
+        try
+        {
+            robotPoseX = await OpcUaServer.ReadRobotPoseX();
+            robotPoseY = await OpcUaServer.ReadRobotPoseY();
+            slamState = await OpcUaServer.ReadSlamState();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error reading variables: {ex.Message}");
+        }
+    }
+
+    private async Task UpdateRobotPosition()
+    {
+        try
+        {
+            await OpcUaServer.UpdateRobotPosition(newRobotPoseX, newRobotPoseY);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error updating robot position: {ex.Message}");
+        }
+    }
+
+    private async Task StartMapping()
+    {
+        try
+        {
+            var result = await OpcUaServer.StartMapping();
+            Console.WriteLine(result);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error starting mapping: {ex.Message}");
+        }
+    }
+
+    private async Task StopMapping()
+    {
+        try
+        {
+            var result = await OpcUaServer.StopMapping();
+            Console.WriteLine(result);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error stopping mapping: {ex.Message}");
+        }
+    }
+}

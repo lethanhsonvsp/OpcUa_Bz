@@ -1,0 +1,1 @@
+C:\Users\letha\OneDrive\BL\OpcUa_Bz\OpcUa_Bz\OpcUa_Bz.Client\bin\Release\net8.0\publish\web.config

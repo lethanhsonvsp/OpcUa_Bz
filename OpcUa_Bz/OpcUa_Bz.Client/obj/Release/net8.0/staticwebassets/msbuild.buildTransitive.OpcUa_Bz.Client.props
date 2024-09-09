@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\OpcUa_Bz.Client.props" />
+</Project>
