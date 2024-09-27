@@ -1,4 +1,4 @@
-﻿using Opc.Ua;
+using Opc.Ua;
 using Opc.Ua.Configuration;
 using Opc.Ua.PubSub;
 using Opc.Ua.Server;
@@ -26,7 +26,7 @@ public class OpcuaManagement
                 ApplicationType = ApplicationType.Server,
                 ServerConfiguration = new ServerConfiguration()
                 {
-                    BaseAddresses = { "opc.tcp://localhost:8080" },
+                    BaseAddresses = { "opc.tcp://localhost:4840" },
                     MinRequestThreadCount = 5,
                     MaxRequestThreadCount = 100,
                     MaxQueuedRequestCount = 200,
@@ -510,7 +510,7 @@ public class MyNodeManager : CustomNodeManager2, INodeManager, INodeIdFactory, I
         // Thêm một số Node mẫu
         AddNode(0.0, 0.0, 0.0, 0.0, 0.0);
 
-        moveToNodeMethod = CreateMethod(session, "MoveToNode", "Move to Node", MoveToNodeMethod, GetNodeArguments(), StatusArguments);
+        moveToNodeMethod = CreateDynamicMethod(session, "MoveToNode", "Move to Node", MoveToNodeMethod);
         predefinedNodes.Add(moveToNodeMethod);
 
         dockToShelfMethod = CreateDynamicMethod(session, "DockToShelf", "Dock to Shelf", DockToShelfMethod);
@@ -733,32 +733,8 @@ public class MyNodeManager : CustomNodeManager2, INodeManager, INodeIdFactory, I
     }
     private void UpdateVariables(object sender, ElapsedEventArgs e)
     {
-        //try
-        //{
-        //    double[] newxy = GenerateSamp();
-        //    UpdateVariable(currentPath, newxy);
-
-        //}
-        //catch (Exception ex)
-        //{
-        //    Utils.Trace(ex, "Unexpected error updating variables.");
-        //}
     }
-    //public void UpdatePublishedValue(string fieldName, object value)
-    //{
-    //    switch (fieldName)
-    //    {
-    //        case "RobotPoseX":
-    //            UpdateVariable(robotPoseX, (double)value);
-    //            break;
-    //        case "RobotPoseY":
-    //            UpdateVariable(robotPoseY, (double)value);
-    //            break;
-    //        default:
-    //            Console.WriteLine($"Unknown field: {fieldName}");
-    //            break;
-    //    }
-    //}
+
     #endregion
 
 
@@ -991,25 +967,6 @@ public class MyNodeManager : CustomNodeManager2, INodeManager, INodeIdFactory, I
     #endregion
 
     #region Service Methods
-    //private double[] GenerateSamp()
-    //{
-    //    List<double> data = new List<double>();
-    //    int numberOfPoints = 360; // Giả sử máy quét có độ phân giải 1 độ
-
-    //    for (int i = 0; i < numberOfPoints; i++)
-    //    {
-    //        double angle = i * (Math.PI / 180); // Chuyển đổi độ sang radian
-    //        double distance = random.NextDouble() * 5 + 1; // Khoảng cách ngẫu nhiên từ 1 đến 6 mét
-
-    //        double x = distance * Math.Cos(angle);
-    //        double y = distance * Math.Sin(angle);
-
-    //        data.Add(Math.Round(x, 3)); // Làm tròn đến 3 chữ số thập phân
-    //        data.Add(Math.Round(y, 3));
-    //    }
-
-    //    return data.ToArray();
-    //}
 
     private ServiceResult StartMappingMethod(
         ISystemContext context,
